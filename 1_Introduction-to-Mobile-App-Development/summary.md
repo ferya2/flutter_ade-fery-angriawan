@@ -8,5 +8,5 @@
 -Mobile App Development 
     IOS : swift dan objective C
     Android : kotlin dan java
-    Tahapan Pembuatan : Bahasa Pemograman (Dart+Flutter) >> Compiler(Android/IOS)SDK >> Machine Code (.apk/.ipa) >> Output
+    Tahapan Pembuatan : Bahasa Pemograman (Dart+Flutter) >> Compiler(Android/IOS)SDK >> Machine Code (.apk/.ipa) >> Outputt
 
