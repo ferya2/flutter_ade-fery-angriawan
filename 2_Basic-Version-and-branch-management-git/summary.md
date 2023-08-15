@@ -5,5 +5,4 @@ Sejarah
     Centralized : CVS - 1986 File focus, Perforce -1995, Subversion -2000 -track directory structure
     -Microsoft Team Foundation Server - 2005
     Distributed : Git - 2005,Mercurial - 2005, Bazaar - 2005
-
-                
+Git dibuat oleh Linus Torvalds (2005)
