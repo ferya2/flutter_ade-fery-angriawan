@@ -6,3 +6,5 @@ Sejarah
     -Microsoft Team Foundation Server - 2005
     Distributed : Git - 2005,Mercurial - 2005, Bazaar - 2005
     Git dibuat oleh Linus Torvalds (2005)
+Git Repository (folder project)
+Github memungkinkan beberapa orang bekerjasama dalam project yang sama
