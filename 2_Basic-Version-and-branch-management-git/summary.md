@@ -17,3 +17,5 @@ THE STAGING AREA
     git stash (untuk menyimpan perubahan - perubahan yang kita inginkan)
     git log (menampilkan apa saja yang sudah kita commit)
     git checkout (menerapkan commit log yang kita inginkan,ke versi sebelumnya) checkout juga dapat digunakan untuk pindah branch
+    git reset --soft/--hard(mengembalikan berkas atau file ke dalam keadaan staged.)
+    
