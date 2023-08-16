@@ -27,4 +27,4 @@ Branches berfungsi melindungi main project
     git merge <branch> (menggabungkan branch menjadi 1)
     fork (untuk menyalin repository milik orang lain ke dalam akun GitHub)
     Pull request (saat ingin berkontribusi pada suatu project di github,kontribusi disini seperti menambahkan fitur baru atau fix bug)
-    conflict (mengubah 1 lain yang sama di branch yang berbeda)
+    conflict (mengubah 1 lain yang sama di branch yang berbedaa)
