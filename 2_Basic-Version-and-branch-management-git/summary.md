@@ -18,4 +18,13 @@ THE STAGING AREA
     git log (menampilkan apa saja yang sudah kita commit)
     git checkout (menerapkan commit log yang kita inginkan,ke versi sebelumnya) checkout juga dapat digunakan untuk pindah branch
     git reset --soft/--hard(mengembalikan berkas atau file ke dalam keadaan staged.)
-    
+    git pull origin master (mengambil dari repository)
+Branches berfungsi melindungi main project
+    git branch ---list (show list branch)
+    git branch <branch> (membuat branch baru dengan nama "branch")
+    git branch -D <branch> (menghapus branch secara spesifik)
+    git push -u origin namabranch (untuk push branch yang kita buat di local ke github)
+    git merge <branch> (menggabungkan branch menjadi 1)
+    fork (untuk menyalin repository milik orang lain ke dalam akun GitHub)
+    Pull request (saat ingin berkontribusi pada suatu project di github,kontribusi disini seperti menambahkan fitur baru atau fix bug)
+    conflict (mengubah 1 lain yang sama di branch yang berbeda)
