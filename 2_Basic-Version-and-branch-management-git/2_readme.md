@@ -26,10 +26,5 @@ Branches berfungsi melindungi main project
     git push -u origin namabranch (untuk push branch yang kita buat di local ke github)
     git merge <branch> (menggabungkan branch menjadi 1)
     fork (untuk menyalin repository milik orang lain ke dalam akun GitHub)
-<<<<<<< HEAD
-    Pull request (saat ingin berkontribusi pada suatu project di github,kontribusi disini seperti menambahkan fitur baru atau fix bugg)
-    conflict (mengubah 1 lain yang sama di branch yang berbeda)
-=======
     Pull request (saat ingin berkontribusi pada suatu project di github,kontribusi disini seperti menambahkan fitur baru atau fix bug)
-    conflict (mengubah 1 lain yang sama di branch yang berbedaa)
->>>>>>> FeatureA
+    conflict (mengubah 1 lain yang sama di branch yang berbeda)
