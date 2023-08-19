@@ -28,4 +28,4 @@ Branches berfungsi melindungi main project
     fork (untuk menyalin repository milik orang lain ke dalam akun GitHub)
     Pull request (saat ingin berkontribusi pada suatu project di github,kontribusi disini seperti menambahkan fitur baru atau fix buggg)
     conflict (mengubah 1 lain yang sama di branch yang berbedaa)
-    p
+    
