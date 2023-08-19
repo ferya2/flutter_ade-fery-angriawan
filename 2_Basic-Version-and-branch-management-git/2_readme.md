@@ -22,7 +22,7 @@ THE STAGING AREA
 Branches berfungsi melindungi main project
     git branch ---list (show list branch)
     git branch <branch> (membuat branch baru dengan nama "branch")
-    git branch -D <branch> (menghapus branch secara spesifik)
+    git branch -D <branch> (menghapus branch secara spesifik sesuai nama branch)
     git push -u origin namabranch (untuk push branch yang kita buat di local ke github)
     git merge <branch> (menggabungkan branch menjadi 1)
     fork (untuk menyalin repository milik orang lain ke dalam akun GitHub)
