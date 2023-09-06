@@ -1,1 +1,15 @@
 # Summary Instalation-Command-Line-Interface-and-Package-Management-in-Flutter
+- Flutter Cli alat yang digunakan untuk berinteraksi dengan flutter sdk dan perintah dijalankan melalui terminal
+- Syntax : - Flutter Doctor (menampilkan informasi software yang dibutuhkan flutter)
+           - Flutter Create (perintah untuk membuat project app flutter baru)
+           - Flutter Run (perintah untuk menjalankan project aplikasi ke device)
+           - Flutter Emulator (menampilkan daftar emulator)
+           - Flutter Channel (menampilkan daftar flutter channel)
+           - Flutter pub add (untuk menambahkan packages ke dependecies yang ada di pubspec.yaml)
+           - Flutter pub get (untuk mendownload semua packages atau dependencies yang ada di pubspec.yaml)
+           - Flutter Build (memproduksi sebuah file aplikasi untuk keperluan deploy atau publish ke AppStore,PlayStore,dll)
+           - Flutter Clean (menghapus folder build serta file lainnya yang dihasilkan saat kita menjalankan aplikasi di emulator, perintah ini juga akan memperkecil ukuran project)
+- Packages management : - flutter mendukung sharing packages
+                        - pacakages dibuat dev lain
+                        - mempercepat pengembangan aplikasi
+                        - mendapatkan packages di website pub.dev
