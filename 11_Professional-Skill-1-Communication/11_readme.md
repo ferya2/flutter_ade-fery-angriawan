@@ -1,1 +1,0 @@
-# Summary Profesional-Skill-1-Communication
