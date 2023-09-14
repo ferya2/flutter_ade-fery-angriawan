@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import './flutter_form.dart';
+import './soal_prioritas1.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Contact());
 }
 
 class MyApp extends StatelessWidget {
