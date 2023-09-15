@@ -1,6 +1,8 @@
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:open_file/open_file.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -28,8 +30,9 @@ class _HomePageState extends State<HomePage> {
             buildDatePicker(context),
             const SizedBox(height: 20),
             // Build Color Picker
-            buildColorPicker(context)
+            buildColorPicker(context),
             // Build File Picker
+            buildFilePicker(),
           ],
         ),
       ),
@@ -95,22 +98,21 @@ class _HomePageState extends State<HomePage> {
                   return AlertDialog(
                     title: const Text('Pick Your Color'),
                     content: SingleChildScrollView(
-                      child : ColorPicker(
-                      pickerColor: _currentColor,
-                      onColorChanged: (color) {
-                        setState(() {
-                          _currentColor = color;
-                        });
-                      },
+                      child: SlidePicker(
+                        pickerColor: _currentColor,
+                        onColorChanged: (color) {
+                          setState(() {
+                            _currentColor = color;
+                          });
+                        },
+                      ),
                     ),
-                    ),
-                    
                     actions: [
                       TextButton(
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                          child: Text('Save')),
+                          child: const Text('Save')),
                     ],
                   );
                 },
@@ -121,5 +123,35 @@ class _HomePageState extends State<HomePage> {
         ),
       ],
     );
+  }
+
+  Widget buildFilePicker() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text('Pick File'),
+        const SizedBox(height: 10),
+        Center(
+          child: ElevatedButton(
+            onPressed: () {
+              _pickFile();
+            },
+            child: const Text('Pick and Open File'),
+          ),
+        ),
+      ],
+    );
+  }
+
+  void _pickFile() async {
+    final result = await FilePicker.platform.pickFiles();
+    if (result == null) return;
+
+    final file = result.files.first;
+    _openFile(file);
+  }
+
+  void _openFile(PlatformFile file) {
+    OpenFile.open(file.path);
   }
 }
