@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
   DateTime _dueDate = DateTime.now();
   final currentDate = DateTime.now();
   Color _currentColor = Colors.orange;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -98,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                   return AlertDialog(
                     title: const Text('Pick Your Color'),
                     content: SingleChildScrollView(
-                      child: SlidePicker(
+                      child: ColorPicker(
                         pickerColor: _currentColor,
                         onColorChanged: (color) {
                           setState(() {
