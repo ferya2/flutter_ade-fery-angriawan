@@ -110,6 +110,47 @@ class _ContactPageState extends State<ContactPage> {
                   labelText: 'Nomor',
                 ),
               ),
+              const SizedBox(height: 10),
+              // Build Color Picker
+              ElevatedButton(
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        title: const Text('Pick Your Color'),
+                        content: SingleChildScrollView(
+                          child: ColorPicker(
+                            pickerColor: _currentColor,
+                            onColorChanged: (color) {
+                              setState(() {
+                                _currentColor = color;
+                              });
+                            },
+                          ),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: const Text('Save'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                child: const Text('Ubah Warna'),
+              ),
+              const SizedBox(height: 10),
+              // Build File Picker
+              ElevatedButton(
+                onPressed: () {
+                  _pickFile();
+                },
+                child: const Text('Pilih File'),
+              ),
             ],
           ),
           actions: <Widget>[
@@ -132,8 +173,8 @@ class _ContactPageState extends State<ContactPage> {
                     name: namaController.text,
                     nomor: nomorController.text,
                     date: contact.date,
-                    color: contact.color,
-                    file: contact.file,
+                    color: _currentColor,
+                    file: _selectedFile,
                   );
                 });
                 Navigator.of(context).pop();
