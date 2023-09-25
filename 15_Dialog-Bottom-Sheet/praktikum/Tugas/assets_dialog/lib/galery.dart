@@ -23,22 +23,16 @@ class GalleryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<String> imagePaths = [
       'assets/background.jpg',
-      'https://picsum.photos/id/1/200/300',
       'assets/kalilinux.png',
       'assets/background.jpg',
-      'https://picsum.photos/id/1/200/300',
       'assets/kalilinux.png',
       'assets/background.jpg',
-      'https://picsum.photos/id/1/200/300',
       'assets/kalilinux.png',
       'assets/background.jpg',
-      'https://picsum.photos/id/1/200/300',
       'assets/kalilinux.png',
       'assets/background.jpg',
-      'https://picsum.photos/id/1/200/300',
       'assets/kalilinux.png',
       'assets/background.jpg',
-      'https://picsum.photos/id/1/200/300',
       'assets/kalilinux.png',
       // Tambahkan URL gambar lainnya di sini
     ];
@@ -49,7 +43,7 @@ class GalleryPage extends StatelessWidget {
       ),
       body: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
+          crossAxisCount: 2,
         ),
         itemCount: imagePaths.length,
         itemBuilder: (BuildContext context, int index) {
