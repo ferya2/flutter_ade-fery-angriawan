@@ -3,12 +3,16 @@ import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'contact.dart';
 import 'galery.dart';
+import 'models/galery_data.dart';
 
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => ContactProvider(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => ContactProvider()),
+        ChangeNotifierProvider(create: (context) => GalleryData()),
+      ],
       child: MyApp(),
     ),
   );

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'contact.dart';
+import 'models/galery_data.dart';
 
 class GalleryApp extends StatelessWidget {
   const GalleryApp({Key? key}) : super(key: key);
@@ -21,21 +23,8 @@ class GalleryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> imagePaths = [
-      'assets/background.jpg',
-      'assets/kalilinux.png',
-      'assets/background.jpg',
-      'assets/kalilinux.png',
-      'assets/background.jpg',
-      'assets/kalilinux.png',
-      'assets/background.jpg',
-      'assets/kalilinux.png',
-      'assets/background.jpg',
-      'assets/kalilinux.png',
-      'assets/background.jpg',
-      'assets/kalilinux.png',
-      // Tambahkan URL gambar lainnya di sini
-    ];
+    final galleryData = Provider.of<GalleryData>(context);
+    final imagePaths = galleryData.imagePaths;
 
     return Scaffold(
       appBar: AppBar(
@@ -65,14 +54,12 @@ class GalleryPage extends StatelessWidget {
             ListTile(
               title: const Text('Contact', style: TextStyle(color: Colors.black)),
               onTap: () {
-                // Pindah ke halaman Contact saat item Contact diklik
                 Navigator.of(context).pushNamed('/contact');
               },
             ),
             ListTile(
               title: const Text('Gallery', style: TextStyle(color: Colors.black)),
               onTap: () {
-                // Tutup drawer saat item Gallery diklik
                 Navigator.pop(context);
               },
             ),
@@ -84,10 +71,8 @@ class GalleryPage extends StatelessWidget {
 
   Widget _buildImageWidget(String path) {
     if (path.startsWith('https://') || path.startsWith('http://')) {
-      // Gambar dari URL
       return Image.network(path);
     } else {
-      // Gambar dari local assets
       return Image.asset(path);
     }
   }
@@ -106,7 +91,7 @@ class GalleryPage extends StatelessWidget {
               leading: const Icon(Icons.check),
               title: const Text('Ya'),
               onTap: () {
-                Navigator.pop(context); // Tutup bottom sheet
+                Navigator.pop(context);
                 _navigateToImagePage(context, imagePath);
               },
             ),
@@ -114,7 +99,7 @@ class GalleryPage extends StatelessWidget {
               leading: const Icon(Icons.close),
               title: const Text('Tidak'),
               onTap: () {
-                Navigator.pop(context); // Tutup bottom sheet
+                Navigator.pop(context);
               },
             ),
           ],
@@ -152,10 +137,8 @@ class ImagePage extends StatelessWidget {
 
   Widget _buildImageWidget(String path) {
     if (path.startsWith('https://') || path.startsWith('http://')) {
-      // Gambar dari URL
       return Image.network(path);
     } else {
-      // Gambar dari local assets
       return Image.asset(path);
     }
   }
