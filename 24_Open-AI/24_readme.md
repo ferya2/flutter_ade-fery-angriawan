@@ -1,1 +1,1 @@
-# Summary Intro AI & Open AI
+# Summary Open AI
