@@ -1,0 +1,43 @@
+# PLAYGROUND OPENAI GRAMMARCORRECTION
+
+USER : She no went to the market.
+ASSISTANT : She did not go to the market.
+
+USER : I want eat a banana juice
+ASSISTANT :I want to drink banana juice.
+
+USER : My friends like playing valorant game and buying some weapon skin in this game
+ASSISTANT : My friends enjoy playing the game Valorant and purchasing weapon skins in it.
+
+USER :
+I just heard you found the one you've been looking
+You've been looking for
+I wish I would have known that wasn't me
+'Cause even after all this time, I still wonder
+Why I can't move on
+Just the way you did so easily
+ASSISTANT : I just heard that you found the person you've been searching for. You've been searching for them. 
+I wish I had known that it wasn't me because even after all this time, I still wonder why I can't move on just like you did so easily.
+
+USER : I is going to the store
+ASSISTANT : I am going to the store.
+
+USER : He no like pizza.
+ASSISTANT : He does not like pizza.
+
+USER : She am playing soccer.
+ASSISTANT :She is playing soccer.
+
+USER : Me and him are best friends.
+ASSISTANT : He and I are best friends.
+
+USER : We goes to school every day.
+ASSISTANT : We go to school every day.
+
+USER : The book is belong to me.
+ASSISTANT : The book belongs to me.
+
+USER : He plays the guitar good.
+ASSISTANT : He plays the guitar well.
+
+link Gdocs : https://docs.google.com/document/d/1tg-EPdXqklGV7J1OElppHZ3QorqIh2Bk-M-kuV4hvnc/edit?usp=sharing 
